@@ -1,0 +1,49 @@
+.Button__contact {
+  color: #1f66b7;
+  width: 150px;
+  height: 36px;
+  border-radius: 5px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.ReactModal__Body--open,
+.ReactModal__Html--open {
+  overflow: hidden;
+}
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+.modal__cross {
+  color: white;
+}
+.modal__cross:hover {
+  color: red;
+  animation: modal__cross 1s ease-in-out;
+}
+
+@keyframes modal__cross {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.modal__form {
+  min-height: 900px;
+}

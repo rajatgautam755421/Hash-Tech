@@ -1,0 +1,42 @@
+.main__hero {
+  background-image: url("../../assets/Images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+  min-height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.triangle__image {
+  width: 50%;
+  height: 70px;
+  background-image: linear-gradient(to bottom right, transparent 50%, white 0),
+    linear-gradient(to top right, white 50%, transparent 0);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: left, right;
+  display: flex;
+  position: absolute;
+  z-index: 3000;
+  justify-content: center;
+  text-align: center;
+  top: 87.5vh;
+}
+.main__hero__content {
+  color: white;
+  padding-top: 40px;
+  text-align: center;
+}
+.main__hero__content > h3 {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.main__hero__content > p {
+  margin-top: 30px;
+}
+
+.main__hero__text {
+  margin-top: 90px;
+}
