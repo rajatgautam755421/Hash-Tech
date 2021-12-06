@@ -1,7 +1,7 @@
 .Main__div {
   display: flex;
   justify-content: center;
-  margin: 20px 0px 0 0px;
+  margin: 20px 0px 20px 0px;
 }
 .Button {
   color: #1f66b7;

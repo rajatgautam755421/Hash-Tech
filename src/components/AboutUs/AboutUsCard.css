@@ -26,7 +26,7 @@
 }
 .card__main__image {
   height: 300px;
-  width: 200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }

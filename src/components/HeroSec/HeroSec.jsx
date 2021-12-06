@@ -7,7 +7,19 @@ const HeroSec = () => {
   return (
     <div className="main__hero">
       <div className="main__hero__content">
-        <div className="triangle__image d-none d-sm-block"></div>
+        <div class="custom-shape-divider-bottom-1634357701">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 0L0 0 598.97 114.72 1200 0z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <div className="main__hero__text">
           <motion.h1
             initial={{ y: -200, opacity: 0 }}
@@ -30,7 +42,6 @@ const HeroSec = () => {
             Design It , Track It , Run It.
           </motion.h3>
           <motion.p
-            className="d-none d-sm-block"
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 2 }}

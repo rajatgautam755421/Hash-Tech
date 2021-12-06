@@ -38,20 +38,18 @@ const ContactForm = () => {
         isOpen={openModel}
         closeTimeoutMS={200}
         onRequestClose={() => setOpenModel(false)}
+        classname="contact__form"
         style={{
           overlay: {
-            width: "85%",
+            width: "100%",
             marginLeft: "auto",
             marginRight: "auto",
             height: "550px",
             marginTop: "100px",
           },
+
           content: {
             position: "absolute",
-            // top: '40px',
-            // left: '40px',
-            // right: '40px',
-            // bottom: '40px',
             border: "1px solid #ccc",
             background: "#000",
             overflow: "hidden",
@@ -107,11 +105,7 @@ const ContactForm = () => {
           <>
             <div className="row">
               <div className="col-12">
-                <form
-                  style={{ marginLeft: "auto", marginRight: "auto" }}
-                  className="modal__form container"
-                  onSubmit={handleSubmit}
-                >
+                <form className="modal__form container" onSubmit={handleSubmit}>
                   <h3 className="mb-3 " style={{ color: "white" }}>
                     Feedback
                   </h3>

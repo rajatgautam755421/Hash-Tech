@@ -7,7 +7,7 @@ import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import Typewriter from "typewriter-effect";
-import { motion } from "framer-motion";
+import Flip from "react-reveal/Flip";
 
 const BussinessArc = [
   {
@@ -60,25 +60,22 @@ const BussinessArchivements = () => {
             }}
           />
         </h3>
-        <motion.div className="row mt-30">
+        <div className="row mt-30">
           {BussinessArc.map((archivements) => {
             return (
-              <motion.div
-                className="col-md-4 col-sm-10  justify-content-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0, 1], scale: [1, 1.42, 1] }}
-                transition={{ duration: 0.5, delay: archivements.index }}
-              >
-                <BaCard
-                  Icon={archivements.Icon}
-                  numeric={archivements.numeric}
-                  text={archivements.text}
-                  key={archivements.id}
-                />
-              </motion.div>
+              <div className="col-md-4 col-sm-10  justify-content-center">
+                <Flip left>
+                  <BaCard
+                    Icon={archivements.Icon}
+                    numeric={archivements.numeric}
+                    text={archivements.text}
+                    key={archivements.id}
+                  />
+                </Flip>
+              </div>
             );
           })}
-        </motion.div>
+        </div>
       </div>
     </>
   );

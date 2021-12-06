@@ -1,11 +1,11 @@
 .footer__main {
-  min-height: 300px;
+  min-height: 330px;
   background: #000000;
   padding-top: 40px;
 }
 .footer__main__h3 {
   color: white;
-  padding-top: 5px;
+
   font-size: 30px;
 }
 .footer__main__h5 {
@@ -41,6 +41,27 @@
   margin-top: 10px;
   margin-left: 28px;
 }
+
+@media screen and (max-width: 600px) {
+  .newsletter__main {
+    margin-left: 28px;
+  }
+}
 .footer__row {
   padding-bottom: 30px;
+}
+.glassMorphism {
+  color: white;
+  height: 13rem;
+  overflow: hidden;
+  width: 24.5rem;
+  margin-bottom: 2rem;
+}
+@media all and (max-width: 600px) {
+  .glassMorphism {
+    margin-top: 1.5rem !important;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -63,6 +63,19 @@ const Footer = () => {
               </form>
             )}
           </div>
+          <div className="glassMorphism col-md-4 col-sm-10 container">
+            <h3 style={{ marginBottom: "30px" }}>Follow Us On Facebook</h3>
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHashtechnologiesai&tabs=timeline&width=400&height=250&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=331146308503808"
+              width="400"
+              height="250"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              title="hash"
+            ></iframe>
+          </div>
         </div>
       </div>
     </>

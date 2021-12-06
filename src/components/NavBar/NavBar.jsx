@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import Hamburger from "hamburger-react";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -35,12 +36,11 @@ const NavBar = () => {
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 2.1 }}
           >
-            <span className="navbar-toggler-icon"></span>
+            <Hamburger />
           </motion.button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <motion.ul
@@ -56,7 +56,6 @@ const NavBar = () => {
                   scale: 1.1,
                   originX: 0,
                   fontWeight: "bold",
-                  textShadow: "0px 0px 8px rgb(0,0,0)",
                 }}
               >
                 <NavLink
@@ -75,7 +74,6 @@ const NavBar = () => {
                   scale: 1.1,
                   originX: 0,
                   fontWeight: "bold",
-                  textShadow: "0px 0px 8px rgb(0,0,0)",
                 }}
               >
                 <NavLink
@@ -94,7 +92,6 @@ const NavBar = () => {
                   scale: 1.1,
                   originX: 0,
                   fontWeight: "bold",
-                  textShadow: "0px 0px 8px rgb(0,0,0)",
                 }}
               >
                 <NavLink
@@ -113,7 +110,6 @@ const NavBar = () => {
                   scale: 1.1,
                   originX: 0,
                   fontWeight: "bold",
-                  textShadow: "0px 0px 8px rgb(0,0,0)",
                 }}
               >
                 <NavLink
@@ -132,7 +128,6 @@ const NavBar = () => {
                   scale: 1.1,
                   originX: 0,
                   fontWeight: "bold",
-                  textShadow: "0px 0px 8px rgb(0,0,0)",
                 }}
               >
                 <NavLink

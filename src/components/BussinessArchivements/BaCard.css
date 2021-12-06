@@ -15,6 +15,9 @@
   color: #0b5ed7;
 }
 .BA__card__main {
+  border-radius: 25px;
+  background: #e6e9ec;
+  box-shadow: 6px -6px 12px #989a9c, -6px 6px 12px #ffffff;
   animation: CardMain 2s ease-in-out;
 }
 @keyframes CardMain {
